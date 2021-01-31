@@ -202,14 +202,14 @@ function editdonhang(msg) {
                                                                                         }
 
                                                                                     );
-                                                                                    // const idgroup = -316335081;
-                                                                                    // bot.sendMessage(
-                                                                                    //     idgroup,
-                                                                                    //     `Cập nhật thành công!\n` + typeee + ` USDT: @` + item.username + `\nMã đơn:` + item.code + `\nSố lượng:` + item.soluong +
-                                                                                    //     `\nRate:` + item.rate + `\nTổng tiền: ` + (item.soluong * item.rate) + `\nKhách hàng: ` + response.data.result, {
-                                                                                    //         parse_mode: 'HTML',
-                                                                                    //     }
-                                                                                    // );
+                                                                                    const idgroup = -587269565;
+                                                                                    bot.sendMessage(
+                                                                                        idgroup,
+                                                                                        `Cập nhật thành công!\n` + typeee + ` USDT: @` + item.username + `\nMã đơn:` + item.code + `\nSố lượng:` + item.soluong +
+                                                                                        `\nRate:` + item.rate + `\nTổng tiền: ` + (item.soluong * item.rate) + `\nKhách hàng: ` + response.data.result, {
+                                                                                            parse_mode: 'HTML',
+                                                                                        }
+                                                                                    );
                                                                                 } else {
                                                                                     bot.sendMessage(
                                                                                         payload.chat.id, response.data.result, {
@@ -243,10 +243,6 @@ function editdonhang(msg) {
                                 })
                             })
                             //kết thúc nhập tổng tiền -----------------------
-
-
-
-
 
                     } else {
                         console.log('có vẫn đề ở nhập số lượng');
@@ -399,14 +395,14 @@ function nhapDonHang(sheet, msg) {
                                                                                         parse_mode: 'HTML',
                                                                                     }
                                                                                 );
-                                                                                const idgroup = -316335081;
-                                                                                // bot.sendMessage(
-                                                                                //     idgroup,
-                                                                                //     `Lên đơn thành công!\n` + typeee + ` USDT: @` + item.username + `\nMã đơn:` + response.data.result + `\nSố lượng:` + item.soluong +
-                                                                                //     `\nRate:` + item.rate + `\nTổng tiền: ` + (item.soluong * item.rate) + `\nKhách hàng: ` + item.khachhang, {
-                                                                                //         parse_mode: 'HTML',
-                                                                                //     }
-                                                                                // );
+                                                                                const idgroup = -587269565;
+                                                                                bot.sendMessage(
+                                                                                    idgroup,
+                                                                                    `Lên đơn thành công!\n` + typeee + ` USDT: @` + item.username + `\nMã đơn:` + response.data.result + `\nSố lượng:` + item.soluong +
+                                                                                    `\nRate:` + item.rate + `\nTổng tiền: ` + (item.soluong * item.rate) + `\nKhách hàng: ` + item.khachhang, {
+                                                                                        parse_mode: 'HTML',
+                                                                                    }
+                                                                                );
                                                                                 console.log(response.data.result);
                                                                             })
                                                                             .catch(error => {
