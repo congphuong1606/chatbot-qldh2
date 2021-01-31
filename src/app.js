@@ -286,9 +286,7 @@ function xoadonhang(msg) {
 
                     bot.sendMessage(
                         payload.chat.id,
-                        response.data.result,
-                    );
-
+                        response.data.result);
                     console.log(response.data.result);
                 })
                 .catch(error => {
